@@ -1,0 +1,34 @@
+.profile-img {
+  position: relative;
+  background: skyblue;
+  width: 100%;
+  height: 65vw;
+
+  img {
+    position: absolute;
+    box-sizing: border-box;
+    width: 80%;
+    left: 10%;
+    padding: 5vw 2vw;
+  }
+}
+
+@media (min-width: 720px) {
+  .profile-img {
+    height: 60vw;
+    img {
+      padding: 5vw 5vw;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .profile-img {
+    height: 37vw;
+    width: 50%;
+
+    img {
+      padding: 5vw 1vw;
+    }
+  }
+}

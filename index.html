@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <title>Albert Tan's Profile</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/cv">CV</a></li>
-        <li><a href="/blog">Blog</a></li>
-      </ul>
-    </nav>
-    <div class="container">
-      <div class="blurb">
-        <h1>Hi there, I'm Albert Tan!</h1>
-        <p>
-          I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't
-          trust me. <a href="/about">Read more about my life...</a>
-        </p>
+    <div id="content">
+      <header>
+        <a class="title" href="#">Albert Tan</a>
+        <nav class="nav">
+          <ul class="nav__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Reach</a></li>
+          </ul>
+        </nav>
+        <a class="nav-toggle"
+          ><button><i class="material-icons">menu</i></button></a
+        >
+        <!-- <a href="#"><button>test2</button></a> -->
+      </header>
+
+      <div class="profile-img">
+        <!-- <div class="img-container"></div> -->
+        <!-- This is the profile image -->
+        <!-- photo -->
+        <img src="./images/albert.jpg" />
       </div>
-      <!-- /.blurb -->
+
+      <div class="profile-desc">
+        <!-- This is the profile description -->
+        <!-- description -->
+      </div>
     </div>
-    <!-- /.container -->
-    <footer>
-      <ul>
-        <li><a href="mailto:alberthtan123@gmail.com">email</a></li>
-        <li>
-          <a href="https://github.com/alberthtan">github.com/alberthtan</a>
-        </li>
-      </ul>
-    </footer>
+
+    <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>

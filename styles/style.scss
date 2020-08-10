@@ -1,0 +1,30 @@
+$boxWidth: 80%;
+$boxHeight: 70%;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+@import "./nav";
+@import "./img";
+@import "./desc";
+
+body {
+  background: rgb(238, 171, 47);
+}
+
+#content {
+  background: #3a3a3a;
+  position: absolute;
+  width: $boxWidth;
+  //height: $boxHeight;
+  left: 50%;
+  //top: 50%;
+  margin-left: -0.5 * $boxWidth;
+  // margin-top: -0.25 * $boxHeight;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 14px 8px 0 rgba(0, 0, 0, 0.2), 0 -14px 8px 0 rgba(0, 0, 0, 0.2),
+    14px 0px 8px 0 rgba(0, 0, 0, 0.2), -14px 0px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 900px) {
+}
