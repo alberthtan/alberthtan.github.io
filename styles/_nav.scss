@@ -49,6 +49,10 @@ header {
   }
 }
 
+.disappear {
+  display: none;
+}
+
 .italics {
   font-style: italic;
 }
@@ -56,6 +60,9 @@ header {
 @media (min-width: 900px) {
   .nav {
     display: inline;
+  }
+  #nav-dropdown {
+    display: none;
   }
   .nav-toggle {
     display: none;
