@@ -29,6 +29,18 @@ body {
 .profile-container {
   display: flex;
   flex-wrap: wrap;
+
+  .profile-desc {
+    color: white;
+
+    a {
+      transition: all 0.3s ease 0s;
+
+      &:hover {
+        color: rgb(238, 171, 47);
+      }
+    }
+  }
 }
 
 @media (min-width: 900px) {
