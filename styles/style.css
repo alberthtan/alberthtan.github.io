@@ -85,8 +85,6 @@ header {
 .profile-img img {
   position: absolute;
   max-height: 90%;
-  left: 10%;
-  bottom: -5%;
 }
 
 @media (min-width: 720px) {
@@ -138,6 +136,12 @@ body {
   background: #eeab2f;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  display: none;
+}
+
 #content {
   background: #3a3a3a;
   position: absolute;
@@ -158,8 +162,22 @@ body {
       flex-wrap: wrap;
 }
 
+.profile-container .profile-img img {
+  left: 15%;
+  bottom: -5%;
+}
+
 .profile-container .profile-desc {
   color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 8%;
+  margin-bottom: 4%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.8;
+  overflow-y: scroll;
 }
 
 .profile-container .profile-desc a {
@@ -169,5 +187,20 @@ body {
 
 .profile-container .profile-desc a:hover {
   color: #eeab2f;
+}
+
+@media (max-width: 900px) {
+  .profile-container {
+    display: block;
+  }
+  .profile-container .profile-img {
+    height: 60vh;
+    left: 10%;
+  }
+  .profile-container .profile-desc {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 0%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

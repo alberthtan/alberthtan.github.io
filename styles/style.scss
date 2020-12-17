@@ -11,15 +11,18 @@ body {
   background: rgb(238, 171, 47);
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  display: none;
+}
+
 #content {
   background: #3a3a3a;
   position: absolute;
   width: $boxWidth;
-  //height: $boxHeight;
   left: 50%;
-  //top: 50%;
   margin-left: -0.5 * $boxWidth;
-  // margin-top: -0.25 * $boxHeight;
   margin-top: 20px;
   margin-bottom: 20px;
   box-shadow: 0 14px 8px 0 rgba(0, 0, 0, 0.2), 0 -14px 8px 0 rgba(0, 0, 0, 0.2),
@@ -30,8 +33,23 @@ body {
   display: flex;
   flex-wrap: wrap;
 
+  .profile-img {
+    img {
+      left: 15%;
+      bottom: -5%;
+    }
+  }
+
   .profile-desc {
     color: white;
+    box-sizing: border-box;
+    padding-right: 8%;
+    margin-bottom: 4%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.8;
+    overflow-y: scroll;
 
     a {
       transition: all 0.3s ease 0s;
@@ -43,5 +61,17 @@ body {
   }
 }
 
-@media (min-width: 900px) {
+@media (max-width: 900px) {
+  .profile-container {
+    display: block;
+    .profile-img {
+      height: 60vh;
+      left: 10%;
+    }
+    .profile-desc {
+      padding-left: 8%;
+      padding-right: 8%;
+      padding-bottom: 0%;
+    }
+  }
 }
