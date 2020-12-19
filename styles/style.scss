@@ -73,6 +73,7 @@ body {
     display: block;
     .profile-img {
       margin: auto;
+      margin-bottom: 15px;
       img {
         max-height: 100%;
         bottom: -10%;
@@ -83,6 +84,14 @@ body {
       padding-left: 8%;
       padding-right: 8%;
       padding-bottom: 0%;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .profile-container {
+    .profile-img {
+      margin-bottom: 15px;
     }
   }
 }

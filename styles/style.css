@@ -161,6 +161,7 @@ body {
   }
   .profile-container .profile-img {
     margin: auto;
+    margin-bottom: 15px;
   }
   .profile-container .profile-img img {
     max-height: 100%;
@@ -170,6 +171,12 @@ body {
     padding-left: 8%;
     padding-right: 8%;
     padding-bottom: 0%;
+  }
+}
+
+@media (max-width: 720px) {
+  .profile-container .profile-img {
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
