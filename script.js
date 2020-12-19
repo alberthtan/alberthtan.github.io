@@ -23,17 +23,17 @@ links.forEach(function (link) {
 });
 
 // nav button
-document.getElementById("nav-button").onclick = function () {
-  //   if (document.getElementById("nav-dropdown").style.display == "inline") {
-  //     console.log("yes");
-  //     document.getElementById("nav-dropdown").style.display = "none";
-  //   } else {
-  //     console.log("no");
-  //     document.getElementById("nav-dropdown").style.display = "inline";
-  //   }
-  if (document.getElementById("nav-dropdown").classList.contains("disappear")) {
-    document.getElementById("nav-dropdown").classList.remove("disappear");
-  } else {
-    document.getElementById("nav-dropdown").classList.add("disappear");
-  }
-};
+// document.getElementById("nav-button").onclick = function () {
+//   //   if (document.getElementById("nav-dropdown").style.display == "inline") {
+//   //     console.log("yes");
+//   //     document.getElementById("nav-dropdown").style.display = "none";
+//   //   } else {
+//   //     console.log("no");
+//   //     document.getElementById("nav-dropdown").style.display = "inline";
+//   //   }
+//   if (document.getElementById("nav-dropdown").classList.contains("disappear")) {
+//     document.getElementById("nav-dropdown").classList.remove("disappear");
+//   } else {
+//     document.getElementById("nav-dropdown").classList.add("disappear");
+//   }
+// };

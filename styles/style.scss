@@ -4,7 +4,7 @@ $boxHeight: 70%;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 
 @import "./nav";
-@import "./img";
+//@import "./img";
 @import "./desc";
 
 body {
@@ -34,9 +34,16 @@ body {
   flex-wrap: wrap;
 
   .profile-img {
+    position: relative;
+    height: 37vw;
+    width: 50%;
     img {
       left: 15%;
       bottom: -5%;
+
+      position: absolute;
+      max-height: 90%;
+      padding: 5vw 1vw;
     }
   }
 
@@ -65,8 +72,12 @@ body {
   .profile-container {
     display: block;
     .profile-img {
-      height: 60vh;
-      left: 10%;
+      margin: auto;
+      img {
+        max-height: 100%;
+        bottom: -10%;
+        //min-height: 300px;
+      }
     }
     .profile-desc {
       padding-left: 8%;

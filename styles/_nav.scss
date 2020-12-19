@@ -20,17 +20,17 @@ header {
 }
 
 .nav {
-  display: none;
+  display: block;
 }
 
-.nav-toggle {
-  display: inline;
-  padding: 9px 0px;
-  button {
-    background: #3a3a3a;
-    color: white;
-  }
-}
+// .nav-toggle {
+//   display: inline;
+//   padding: 9px 0px;
+//   button {
+//     background: #3a3a3a;
+//     color: white;
+//   }
+// }
 
 .nav__links {
   list-style: none;
@@ -57,14 +57,21 @@ header {
   font-style: italic;
 }
 
-@media (min-width: 900px) {
-  .nav {
-    display: inline;
-  }
-  #nav-dropdown {
-    display: none;
-  }
-  .nav-toggle {
-    display: none;
+// @media (min-width: 900px) {
+//   // .nav {
+//   //   display: inline;
+//   // }
+//   // #nav-dropdown {
+//   //   display: none;
+//   // }
+//   // .nav-toggle {
+//   //   display: none;
+//   // }
+// }
+
+@media (max-width: 720px) {
+  .nav__links li {
+    display: block;
+    margin: 5px;
   }
 }
